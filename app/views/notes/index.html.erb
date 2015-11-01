@@ -1,0 +1,5 @@
+<h1>投稿一覧</h1>
+<% @notes.each do |note| %>
+<%= link_to note.title,show_note_path(note.id) %>
+
+<% end %>
